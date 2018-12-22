@@ -1,0 +1,9 @@
+C:\Users\Charles Opper\source\repos\ComicBase\ApplicationCore\ComicBase.Core\bin\Debug\netcoreapp2.1\ComicBase.Core.deps.json
+C:\Users\Charles Opper\source\repos\ComicBase\ApplicationCore\ComicBase.Core\bin\Debug\netcoreapp2.1\ComicBase.Core.dll
+C:\Users\Charles Opper\source\repos\ComicBase\ApplicationCore\ComicBase.Core\bin\Debug\netcoreapp2.1\ComicBase.Core.pdb
+C:\Users\Charles Opper\source\repos\ComicBase\ApplicationCore\ComicBase.Core\obj\Debug\netcoreapp2.1\ComicBase.Core.csprojAssemblyReference.cache
+C:\Users\Charles Opper\source\repos\ComicBase\ApplicationCore\ComicBase.Core\obj\Debug\netcoreapp2.1\ComicBase.Core.csproj.CoreCompileInputs.cache
+C:\Users\Charles Opper\source\repos\ComicBase\ApplicationCore\ComicBase.Core\obj\Debug\netcoreapp2.1\ComicBase.Core.AssemblyInfoInputs.cache
+C:\Users\Charles Opper\source\repos\ComicBase\ApplicationCore\ComicBase.Core\obj\Debug\netcoreapp2.1\ComicBase.Core.AssemblyInfo.cs
+C:\Users\Charles Opper\source\repos\ComicBase\ApplicationCore\ComicBase.Core\obj\Debug\netcoreapp2.1\ComicBase.Core.dll
+C:\Users\Charles Opper\source\repos\ComicBase\ApplicationCore\ComicBase.Core\obj\Debug\netcoreapp2.1\ComicBase.Core.pdb
