@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ComicBase.Core", "ComicBase
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComicBase.Core", "ApplicationCore\ComicBase.Core\ComicBase.Core.csproj", "{9C4BB236-C198-4E66-9964-1721A6F675AE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D5722E03-0146-4A23-9042-E3ACDBA5BC75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
