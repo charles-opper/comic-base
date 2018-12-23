@@ -1,0 +1,14 @@
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\bin\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.deps.json
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\bin\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.runtimeconfig.json
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\bin\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.runtimeconfig.dev.json
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\bin\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.dll
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\bin\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.pdb
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\bin\Debug\netcoreapp2.2\ComicBase.Core.dll
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\bin\Debug\netcoreapp2.2\ComicBase.Core.pdb
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\obj\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.csprojAssemblyReference.cache
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\obj\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.csproj.CoreCompileInputs.cache
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\obj\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.AssemblyInfoInputs.cache
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\obj\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.AssemblyInfo.cs
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\obj\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.csproj.CopyComplete
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\obj\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.dll
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\Repositories\ComicBase.EfSqlRepository\obj\Debug\netcoreapp2.2\ComicBase.EfSqlRepository.pdb

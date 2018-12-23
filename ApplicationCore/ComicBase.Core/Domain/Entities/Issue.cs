@@ -1,14 +1,13 @@
-﻿using System;
+﻿using ComicBase.Core.Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace ComicBase.Core.Domain.Entities
 {
-    public class Issue
+    public class Issue : EntityBase
     {
-        public int? Id { get; set; }
-
         [Required]
         public string Title { get; set; }
 
@@ -19,6 +18,8 @@ namespace ComicBase.Core.Domain.Entities
 
         [Required]
         public int IssueNumber { get; set; }
+
+        public int PublisherId { get; set; }
 
         public virtual Publisher Publisher { get; set; }
     }
