@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ComicBase.EfSqlRepository.Interfaces;
 using ComicBase.EfSqlRepository.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,6 +30,8 @@ namespace ComicBase
             var connection = Configuration.GetConnectionString("DefaultConnection");
 
             services.AddDbContext<ComicBaseContext>(options => options.UseSqlServer(connection));
+
+            services.AddTransient(typeof(IComicBaseRepositoryFactory), typeof(ComicBaseRepositoryFactory));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

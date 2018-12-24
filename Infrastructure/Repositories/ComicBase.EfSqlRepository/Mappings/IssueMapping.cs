@@ -18,6 +18,7 @@ namespace ComicBase.EfSqlRepository.Mappings
             builder.Property(p => p.Year).IsRequired();
             builder.Property(p => p.Volume).IsRequired();
             builder.Property(p => p.IssueNumber).IsRequired();
+            builder.Property(p => p.PublisherId).IsRequired();
 
             builder.Property(p => p.Created).IsRequired();
             builder.Property(p => p.Updated).IsRequired();

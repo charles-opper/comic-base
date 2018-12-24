@@ -18,7 +18,7 @@ namespace ComicBase.EfSqlRepository.Repository
         
         public IEnumerable<T> Get()
         {
-            return _context.Set<T>().Where(i => i.Active);
+            return _context.Set<T>();
         }
 
         public async Task<T> GetAsync(int id)

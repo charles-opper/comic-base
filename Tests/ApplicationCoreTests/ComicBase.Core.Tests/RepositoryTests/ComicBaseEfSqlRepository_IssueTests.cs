@@ -1,7 +1,7 @@
 ﻿using ComicBase.Core.Domain.Entities;
 using ComicBase.Core.Domain.Exceptions;
+using ComicBase.Core.Domain.Interfaces;
 using ComicBase.Core.Tests.Mocks;
-using ComicBase.EfSqlRepository.Interfaces;
 using ComicBase.EfSqlRepository.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;

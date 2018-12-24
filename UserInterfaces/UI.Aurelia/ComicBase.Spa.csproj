@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\app\components\Issue\IssueComponent.ts" />
+    <None Remove="ClientApp\app\components\Issue\IssueService.ts" />
+    <None Remove="ClientApp\app\components\Issue\Models\Issue.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +25,12 @@
   <ItemGroup>
     <ProjectReference Include="..\..\ApplicationCore\ComicBase.Core\ComicBase.Core.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Repositories\ComicBase.EfSqlRepository\ComicBase.EfSqlRepository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\components\Issue\IssueComponent.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Issue\IssueService.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Issue\Models\Issue.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

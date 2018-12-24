@@ -21,11 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D5722E03
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{13BEABDC-E4C1-42F0-8301-D8E167D322C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicBase.EfSqlRepository", "Infrastructure\Repositories\ComicBase.EfSqlRepository\ComicBase.EfSqlRepository.csproj", "{4E69E4C3-D1BE-45D0-B071-BAC6634C720B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComicBase.EfSqlRepository", "Infrastructure\Repositories\ComicBase.EfSqlRepository\ComicBase.EfSqlRepository.csproj", "{4E69E4C3-D1BE-45D0-B071-BAC6634C720B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationCoreTests", "ApplicationCoreTests", "{1625C785-635F-4C33-93B5-D6E82952D822}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicBase.Core.Tests", "Tests\ApplicationCoreTests\ComicBase.Core.Tests\ComicBase.Core.Tests.csproj", "{C786B661-E85F-4419-BAAC-200DFC45640F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComicBase.Core.Tests", "Tests\ApplicationCoreTests\ComicBase.Core.Tests\ComicBase.Core.Tests.csproj", "{C786B661-E85F-4419-BAAC-200DFC45640F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,7 @@ import { Aurelia, PLATFORM } from 'aurelia-framework';
 import { Router, RouterConfiguration } from 'aurelia-router';
 
 export class App {
-    router: Router;
+    router?: Router;
 
     configureRouter(config: RouterConfiguration, router: Router) {
         config.title = 'ComicBase';
@@ -14,12 +14,12 @@ export class App {
             nav: true,
             title: 'Home'
         }, {
-            route: 'counter',
-            name: 'counter',
+            route: 'issue',
+            name: 'Issue',
             settings: { icon: 'education' },
-            moduleId: PLATFORM.moduleName('../counter/counter'),
+            moduleId: PLATFORM.moduleName('../Issue/IssueComponent'),
             nav: true,
-            title: 'Counter'
+            title: 'My Issues'
         }, {
             route: 'fetch-data',
             name: 'fetchdata',
