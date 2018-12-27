@@ -5,29 +5,14 @@ export class App {
     router?: Router;
 
     configureRouter(config: RouterConfiguration, router: Router) {
-        config.title = 'ComicBase';
-        config.map([{
-            route: [ '', 'home' ],
-            name: 'home',
-            settings: { icon: 'home' },
-            moduleId: PLATFORM.moduleName('../home/home'),
-            nav: true,
-            title: 'Home'
-        }, {
-            route: 'issue',
-            name: 'Issue',
-            settings: { icon: 'education' },
-            moduleId: PLATFORM.moduleName('../Issue/IssueComponent'),
-            nav: true,
-            title: 'My Issues'
-        }, {
-            route: 'fetch-data',
-            name: 'fetchdata',
-            settings: { icon: 'th-list' },
-            moduleId: PLATFORM.moduleName('../fetchdata/fetchdata'),
-            nav: true,
-            title: 'Fetch data'
-        }]);
+
+        config.title = 'Comic Base';
+        config.map([
+            { route: '', moduleId: PLATFORM.moduleName('../issue/no-selection'), title: 'Select Issue' },
+            { route: 'issues/:id?', moduleId: PLATFORM.moduleName('../issue/issue-details'), name: 'issues' }
+        ]);
+
+        config.fallbackRoute('');
 
         this.router = router;
     }

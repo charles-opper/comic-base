@@ -8,9 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\app\components\Issue\IssueComponent.ts" />
+    <None Remove="ClientApp\app\components\Issue\issue-details.ts" />
+    <None Remove="ClientApp\app\components\Issue\issue-list.ts" />
     <None Remove="ClientApp\app\components\Issue\IssueService.ts" />
+    <None Remove="ClientApp\app\components\Issue\Message.ts" />
     <None Remove="ClientApp\app\components\Issue\Models\Issue.ts" />
+    <None Remove="ClientApp\app\components\Issue\no-selection.ts" />
+    <None Remove="ClientApp\app\components\Publisher\Models\Publisher.ts" />
+    <None Remove="ClientApp\app\components\Publisher\PublisherService.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,9 +33,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\app\components\Issue\IssueComponent.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Issue\issue-details.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Issue\issue-list.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Issue\IssueService.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Issue\Message.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Issue\Models\Issue.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Issue\no-selection.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Publisher\Models\Publisher.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Publisher\PublisherService.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

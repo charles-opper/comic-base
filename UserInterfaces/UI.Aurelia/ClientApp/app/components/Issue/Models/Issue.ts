@@ -1,8 +1,11 @@
-﻿export class Issue {
+﻿import { Publisher } from "../../Publisher/Models/Publisher";
 
-    constructor(title: string, publisher: string, volume: number, issueNumber: number, year: number) {
+export class Issue {
+
+    constructor(title: string, publisherId: number, publisher: Publisher, volume: number, issueNumber: number, year: number) {
 
         this.Title = title;
+        this.PublisherId = publisherId;
         this.Publisher = publisher;
         this.Volume = volume;
         this.IssueNumber = issueNumber;
@@ -12,7 +15,8 @@
 
     public Id?: number;
     public Title: string;
-    public Publisher: string;
+    public PublisherId: number;
+    public Publisher: Publisher;
     public Volume: number;
     public IssueNumber: number;
     public Year: number;

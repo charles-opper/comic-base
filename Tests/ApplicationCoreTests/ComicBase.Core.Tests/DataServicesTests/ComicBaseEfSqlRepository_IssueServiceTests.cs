@@ -52,7 +52,7 @@ namespace ComicBase.Core.Tests.DataServicesTests
         {
             var service = new IssueService(MockConfiguration.ConnectionString, _factory);
 
-            var issues = service.GetIssues();
+            var issues = service.GetActiveIssues();
 
             Assert.IsTrue(issues.Count() >= 0);
             Assert.IsTrue(issues.All(i => i.Publisher != null && i.Publisher.Id == i.PublisherId));
@@ -77,7 +77,7 @@ namespace ComicBase.Core.Tests.DataServicesTests
             var issue = service.GetIssueAsync(savedIssue.Id.Value).Result;
 
             Assert.AreEqual(savedIssue.Id, issue.Id);
-            Assert.IsTrue(savedIssue.Publisher != null && savedIssue.PublisherId == savedIssue.Publisher.Id);
+            Assert.IsTrue(issue.Publisher != null && issue.PublisherId == savedIssue.PublisherId);
         }
 
         [TestMethod]

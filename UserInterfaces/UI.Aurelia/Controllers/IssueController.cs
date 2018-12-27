@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace ComicBase.Spa.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/issue")]
     public class IssueController : ApiControllerBase
     {
         public IssueController(IComicBaseRepositoryFactory factory, IConfiguration configuration)
@@ -26,32 +26,48 @@ namespace ComicBase.Spa.Controllers
         {
             var service = new IssueService(ConnectionString, _factory);
 
-            return await Task.Factory.StartNew(() => service.GetIssues()); 
+            return await Task.Factory.StartNew(() => service.GetActiveIssues()); 
         }
 
         // GET: api/Issue/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{id}")]
+        public async Task<Issue> Get(int id)
         {
-            return "value";
+            var service = new IssueService(ConnectionString, _factory);
+
+            return await service.GetIssueAsync(id);
         }
 
         // POST: api/Issue
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Issue>> Post([FromBody] Issue issue)
         {
+            var service = new IssueService(ConnectionString, _factory);
+
+            await service.SaveIssueAsync(issue);
+            
+            return new CreatedAtActionResult(nameof(Get), "Issue", new { id = issue.Id }, issue);
         }
 
         // PUT: api/Issue/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<Issue> Put(int id, [FromBody] Issue issue)
         {
+            var service = new IssueService(ConnectionString, _factory);
+
+            return await service.SaveIssueAsync(issue);
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<Issue> Delete(int id)
         {
+            var service = new IssueService(ConnectionString, _factory);
+
+            var issue = await service.GetIssueAsync(id);
+            service.RemoveIssue(issue);
+
+            return issue;
         }
 
         private IComicBaseRepositoryFactory _factory;

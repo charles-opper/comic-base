@@ -3,6 +3,7 @@ using ComicBase.Core.Domain.Interfaces;
 using ComicBase.EfSqlRepository.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,14 +28,14 @@ namespace ComicBase.EfSqlRepository.DataServices
             return issue;
         }
 
-        public IEnumerable<Issue> GetIssues()
+        public IEnumerable<Issue> GetActiveIssues()
         {
             var issues = new List<Issue>();
 
             var publisherRepo = _factory.GetRepository<Publisher>(_connectionString);
             var issueRepo = _factory.GetRepository<Issue>(_connectionString);
 
-            issues.AddRange(issueRepo.Get());
+            issues.AddRange(issueRepo.Get().Where(i => i.Active));
             issues.ForEach(i => i.Publisher = publisherRepo.GetAsync(i.PublisherId).Result);
 
             return issues;
@@ -52,6 +53,9 @@ namespace ComicBase.EfSqlRepository.DataServices
             {
                 await issueRepo.InsertAsync(issue);
             }
+
+            var publisherRepo = _factory.GetRepository<Publisher>(_connectionString);
+            issue.Publisher = publisherRepo.GetAsync(issue.PublisherId).Result;
 
             return issue;
         }
