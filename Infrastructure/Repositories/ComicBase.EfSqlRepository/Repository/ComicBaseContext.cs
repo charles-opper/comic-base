@@ -9,6 +9,9 @@ using System.Text;
 
 namespace ComicBase.EfSqlRepository.Repository
 {
+    /// <summary>
+    /// Entity Framework database context class.
+    /// </summary>
     public class ComicBaseContext : DbContext
     {
         public ComicBaseContext() { }

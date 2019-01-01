@@ -7,6 +7,9 @@ using Thoorium.Comicvine.Objects;
 
 namespace ComicBase.OnlineComicApiProvider.Factory
 {
+    /// <summary>
+    /// A ComicVine API service provider that retrieves comic book catalog data via the comicvine-api-net project.
+    /// </summary>
     public class ComicVineProvider : IOnlineCatalogProvider
     {
         public ComicVineProvider(string apiKey)
@@ -14,6 +17,11 @@ namespace ComicBase.OnlineComicApiProvider.Factory
             _comicVineApiProxy = new Comicvine(apiKey);
         }
 
+        /// <summary>
+        /// Retrieve a list of online catalog items from ComicVine based on a search query via title.
+        /// </summary>
+        /// <param name="title">The comic book title for the search query.</param>
+        /// <returns>An enumerable list of online catalog items.</returns>
         public IEnumerable<OnlineCatalogItem> GetCatalogItemsByTitle(string title)
         {
             var catalogItems = new List<OnlineCatalogItem>();

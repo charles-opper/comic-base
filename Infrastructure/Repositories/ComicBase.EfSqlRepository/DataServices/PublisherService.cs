@@ -6,6 +6,9 @@ using System.Text;
 
 namespace ComicBase.EfSqlRepository.DataServices
 {
+    /// <summary>
+    /// Data service class for CRUD operations with publisher entities.
+    /// </summary>
     public class PublisherService
     {
         public PublisherService(string connectionString, IComicBaseRepositoryFactory factory)

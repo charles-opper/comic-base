@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace ComicBase.EfSqlRepository.DataServices
 {
+    /// <summary>
+    /// Data service class for CRUD operations with issue entities.
+    /// </summary>
     public class IssueService
     {
         public IssueService(string connectionString, IComicBaseRepositoryFactory factory)

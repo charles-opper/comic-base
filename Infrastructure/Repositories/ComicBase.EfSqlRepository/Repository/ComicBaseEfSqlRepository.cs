@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace ComicBase.EfSqlRepository.Repository
 {
+    /// <summary>
+    /// Internal generic repository implmentation.
+    /// </summary>
+    /// <typeparam name="T">The entity object type T.</typeparam>
     internal class ComicBaseEfSqlRepository<T> : IRepository<T> where T : class, IEntity, new()
     {
         public ComicBaseEfSqlRepository(ComicBaseContext context)
@@ -34,6 +38,7 @@ namespace ComicBase.EfSqlRepository.Repository
 
         public async Task<T> InsertAsync(T item)
         {
+            // Assume entity with equal Created and Updated values have never been edited (i.e. pristine).
             item.Created = DateTime.Now;
             item.Updated = item.Created;
             item.Active = true;
@@ -57,6 +62,7 @@ namespace ComicBase.EfSqlRepository.Repository
         {
             if (item.Active)
             {
+                // Soft deletion implemented via active flag. Tracked as an update.
                 item.Active = false;
                 item.Updated = DateTime.Now;
 
@@ -68,6 +74,7 @@ namespace ComicBase.EfSqlRepository.Repository
 
         public void Delete(T item)
         {
+            // Hard removal of entity.
             _context.Remove(item);
             _context.SaveChanges();
         }

@@ -4,6 +4,9 @@ using System.Text;
 
 namespace ComicBase.Core.Domain.Interfaces
 {
+    /// <summary>
+    /// The entity base interface.
+    /// </summary>
     public interface IEntity
     {
         int? Id { get; set; }

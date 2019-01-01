@@ -7,6 +7,9 @@ using System.Text;
 
 namespace ComicBase.EfSqlRepository.Mappings
 {
+    /// <summary>
+    /// Entity Framework Mapping for a Publisher entity.
+    /// </summary>
     internal class PublisherMap : IEntityTypeConfiguration<Publisher>
     {
         public void Configure(EntityTypeBuilder<Publisher> builder)

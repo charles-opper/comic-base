@@ -4,6 +4,9 @@ using System.Text;
 
 namespace ComicBase.OnlineComicApiProvider.Interfaces
 {
+    /// <summary>
+    /// A basic online catalog item with common fields that can be used between all online comic book providers.
+    /// </summary>
     public class OnlineCatalogItem
     {
         public string Title { get; set; }

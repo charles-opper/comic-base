@@ -79,6 +79,8 @@ export class IssueDetails {
             });
         }
 
+        this.router.router.navigateBack();
+
     }
 
     cancel() {

@@ -5,6 +5,9 @@ using System.Text;
 
 namespace ComicBase.Core.Domain.Entities
 {
+    /// <summary>
+    /// Base class for all entity objects. Auto increment assumed for Id. Entity removal implemented via soft deletion. 
+    /// </summary>
     public abstract class EntityBase : IEntity
     {
         public int? Id { get; set; }

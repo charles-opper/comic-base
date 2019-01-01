@@ -6,6 +6,9 @@ using System.Text;
 
 namespace ComicBase.Core.Domain.Entities
 {
+    /// <summary>
+    /// A comic book publisher entity.
+    /// </summary>
     public class Publisher : EntityBase
     {
         [Required]

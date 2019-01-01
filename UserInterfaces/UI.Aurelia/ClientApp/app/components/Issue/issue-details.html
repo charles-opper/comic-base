@@ -9,43 +9,43 @@
                 <div class="form-group">
                     <label class="col-sm-3 col-form-label">Title</label>
                     <div class="col-sm-9">
-                        <input type="text" placeholder="Issue Title" class="form-control" value.bind="issue.Title" />
+                        <input type="text" placeholder="Issue Title" class="form-control" value.bind="issue.Title" required />
                     </div>
                 </div>
 
                 <div class="form-group">
+                    <label class="col-sm-3 col-form-label">
+                        Publisher
+                    </label>
                     <div class="col-sm-9">
-                        <label class="col-sm-3 col-form-label">
-                            Publisher
-                            <select class="form-control" value.bind="issue.PublisherId">
-                                <option model.bind="null">Choose...</option>
-                                <option repeat.for="publisher of Publishers"
-                                        model.bind="publisher.Id">
-                                    ${ publisher.Name }
-                                </option>
-                            </select>
-                        </label>
+                        <select class="form-control" value.bind="issue.PublisherId" required>
+                            <option model.bind="null">Choose...</option>
+                            <option repeat.for="publisher of Publishers"
+                                    model.bind="publisher.Id">
+                                ${ publisher.Name }
+                            </option>
+                        </select>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-sm-3 col-form-label">Volume</label>
                     <div class="col-sm-9">
-                        <input type="text" placeholder="Volume Number" class="form-control" value.bind="issue.Volume" />
+                        <input type="text" placeholder="Volume Number" class="form-control" value.bind="issue.Volume" required />
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-sm-3 col-form-label">Issue</label>
                     <div class="col-sm-9">
-                        <input type="text" placeholder="Issue Number" class="form-control" value.bind="issue.IssueNumber" />
+                        <input type="text" placeholder="Issue Number" class="form-control" value.bind="issue.IssueNumber" required />
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-sm-3 col-form-label">Year</label>
                     <div class="col-sm-9">
-                        <input type="text" placeholder="Year" class="form-control" value.bind="issue.Year" />
+                        <input type="text" placeholder="Year" class="form-control" value.bind="issue.Year" required />
                     </div>
                 </div>
 

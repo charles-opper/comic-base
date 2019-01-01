@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ComicBase.Core.Domain.Interfaces
 {
+    /// <summary>
+    /// Basic generic repository for any given entity type T.
+    /// </summary>
+    /// <typeparam name="T">The entity object type.</typeparam>
     public interface IRepository<T> where T : class, IEntity, new()
     {
         IEnumerable<T> Get();

@@ -7,6 +7,9 @@ using System.Text;
 
 namespace ComicBase.EfSqlRepository.Mappings
 {
+    /// <summary>
+    /// Entity Framework Mapping for an Issue entity.
+    /// </summary>
     internal class IssueMap : IEntityTypeConfiguration<Issue>
     {
         public void Configure(EntityTypeBuilder<Issue> builder)
