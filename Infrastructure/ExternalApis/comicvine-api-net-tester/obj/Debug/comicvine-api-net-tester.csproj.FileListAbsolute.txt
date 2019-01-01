@@ -1,0 +1,12 @@
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\bin\Debug\comicvine-api-net-tester.exe.config
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\bin\Debug\comicvine-api-net-tester.exe
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\bin\Debug\comicvine-api-net-tester.pdb
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\bin\Debug\Thoorium.Comicvine.dll
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\bin\Debug\RestSharp.dll
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\bin\Debug\Thoorium.Comicvine.pdb
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\bin\Debug\RestSharp.xml
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\obj\Debug\comicvine-api-net-tester.csprojAssemblyReference.cache
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\obj\Debug\comicvine-api-net-tester.csproj.CoreCompileInputs.cache
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\obj\Debug\comicvine-api-net-tester.csproj.CopyComplete
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\obj\Debug\comicvine-api-net-tester.exe
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net-tester\obj\Debug\comicvine-api-net-tester.pdb

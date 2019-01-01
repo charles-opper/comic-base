@@ -5,17 +5,19 @@ using System.Threading.Tasks;
 using ComicBase.Core.Domain.Entities;
 using ComicBase.EfSqlRepository.DataServices;
 using ComicBase.EfSqlRepository.Interfaces;
+using ComicBase.Spa.Infrastructure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace ComicBase.Spa.Controllers
 {
     [Route("api/publisher")]
     public class PublisherController : ApiControllerBase
     {
-        public PublisherController(IComicBaseRepositoryFactory factory, IConfiguration config)
-            : base(config)
+        public PublisherController(IComicBaseRepositoryFactory factory, IConfiguration config, IOptions<AppConfig> options)
+            : base(config, options)
         {
             _factory = factory;
         }

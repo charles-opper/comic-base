@@ -1,0 +1,13 @@
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\bin\Debug\netcoreapp2.2\ComicBase.OnlineComicApiProvider.deps.json
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\bin\Debug\netcoreapp2.2\ComicBase.OnlineComicApiProvider.dll
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\bin\Debug\netcoreapp2.2\ComicBase.OnlineComicApiProvider.pdb
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\bin\Debug\netcoreapp2.2\Thoorium.Comicvine.dll
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\bin\Debug\netcoreapp2.2\RestSharp.dll
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\bin\Debug\netcoreapp2.2\Thoorium.Comicvine.pdb
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\obj\Debug\netcoreapp2.2\ComicBase.OnlineComicApiProvider.csprojAssemblyReference.cache
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\obj\Debug\netcoreapp2.2\ComicBase.OnlineComicApiProvider.csproj.CoreCompileInputs.cache
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\obj\Debug\netcoreapp2.2\ComicBase.OnlineComicApiProvider.AssemblyInfoInputs.cache
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\obj\Debug\netcoreapp2.2\ComicBase.OnlineComicApiProvider.AssemblyInfo.cs
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\obj\Debug\netcoreapp2.2\ComicBase.OnlineComicApiProvider.csproj.CopyComplete
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\obj\Debug\netcoreapp2.2\ComicBase.OnlineComicApiProvider.dll
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\obj\Debug\netcoreapp2.2\ComicBase.OnlineComicApiProvider.pdb

@@ -1,21 +1,13 @@
 <template>
     <require from="./app.css"></require>
-    <require from="../issue/issue-list"></require>
 
     <nav class="navbar navbar-inverse navbar-light bg-light fixed-top" role="navigation">
-        <a class="navbar-brand" href="#">
-            <span>My Issues</span>
-        </a>
-        <a class="navbar-brand" href="#">
-            <span>Cosmic Search</span>
-        </a>
-        <a class="navbar-brand" href="#">
-            <span>Publishers</span>
+        <a repeat.for="nav of router.navigation" href.bind="nav.href" class="navbar-brand">
+            <span class="${nav.isActive ? 'active' : ''}">${nav.title}</span>
         </a>
     </nav>
 
-    <issue-list class="col-md-4"></issue-list>
-    <router-view class="col-md-8"></router-view>
+    <router-view></router-view>
 </template>
 
 

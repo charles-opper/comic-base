@@ -1,0 +1,16 @@
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net\bin\Debug\Thoorium.Comicvine.dll
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net\bin\Debug\Thoorium.Comicvine.pdb
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net\bin\Debug\RestSharp.dll
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net\bin\Debug\RestSharp.xml
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net\obj\Debug\comicvine-api-net.csprojAssemblyReference.cache
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net\obj\Debug\comicvine-api-net.csproj.CoreCompileInputs.cache
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net\obj\Debug\comicvine-api-net.csproj.CopyComplete
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net\obj\Debug\Thoorium.Comicvine.dll
+C:\Users\Charles Opper\source\repos\comicvine-api-net-master\comicvine-api-net\obj\Debug\Thoorium.Comicvine.pdb
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\comicvine-api-net\bin\Debug\Thoorium.Comicvine.dll
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\comicvine-api-net\bin\Debug\Thoorium.Comicvine.pdb
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\comicvine-api-net\obj\Debug\comicvine-api-net.csprojAssemblyReference.cache
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\comicvine-api-net\obj\Debug\comicvine-api-net.csproj.CoreCompileInputs.cache
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\comicvine-api-net\obj\Debug\comicvine-api-net.csproj.CopyComplete
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\comicvine-api-net\obj\Debug\Thoorium.Comicvine.dll
+C:\Users\Charles Opper\source\repos\ComicBase\Infrastructure\ExternalApis\comicvine-api-net\obj\Debug\Thoorium.Comicvine.pdb

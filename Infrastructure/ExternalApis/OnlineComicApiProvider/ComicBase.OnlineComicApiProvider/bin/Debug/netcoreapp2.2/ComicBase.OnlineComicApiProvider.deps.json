@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "ComicBase.OnlineComicApiProvider/1.0.0": {
+        "dependencies": {
+          "comicvine-api-net": "1.0.0"
+        },
+        "runtime": {
+          "ComicBase.OnlineComicApiProvider.dll": {}
+        }
+      },
+      "comicvine-api-net/1.0.0": {
+        "dependencies": {
+          "RestSharp": "105.1.0.0"
+        },
+        "runtime": {
+          "Thoorium.Comicvine.dll": {}
+        }
+      },
+      "RestSharp.Reference/105.1.0.0": {
+        "runtime": {
+          "RestSharp.dll": {
+            "assemblyVersion": "105.1.0.0",
+            "fileVersion": "105.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ComicBase.OnlineComicApiProvider/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "comicvine-api-net/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RestSharp.Reference/105.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

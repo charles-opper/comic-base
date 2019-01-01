@@ -8,8 +8,11 @@ export class App {
 
         config.title = 'Comic Base';
         config.map([
-            { route: '', moduleId: PLATFORM.moduleName('../issue/no-selection'), title: 'Select Issue' },
-            { route: 'issues/:id?', moduleId: PLATFORM.moduleName('../issue/issue-details'), name: 'issues' }
+            { route: '', redirect: 'issuemanager' },
+            { route: 'issuelist', moduleId: PLATFORM.moduleName('../issue/issue-list'), name: 'issuelist' },
+            { route: 'issues/:id?', moduleId: PLATFORM.moduleName('../issue/issue-details'), name: 'issues' },
+            { route: 'issuemanager', moduleId: PLATFORM.moduleName('../issue/issue-manager'), name: 'issuemanager', title: 'My Issues', nav: true },
+            { route: 'cosmicsearch', moduleId: PLATFORM.moduleName('../cosmicsearch/cosmic-search'), name: 'cosmicsearch', title: 'Cosmic Search', nav: true }
         ]);
 
         config.fallbackRoute('');

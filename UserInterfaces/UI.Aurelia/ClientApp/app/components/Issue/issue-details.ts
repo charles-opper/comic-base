@@ -3,7 +3,7 @@ import { inject } from "aurelia-framework";
 import { Publisher } from "../Publisher/Models/Publisher";
 import { IssueService } from "./IssueService";
 import { Issue } from "./Models/Issue";
-import { RouteConfig } from "aurelia-router";
+import { RouteConfig, Router } from "aurelia-router";
 import { EventAggregator } from "aurelia-event-aggregator";
 import { IssueViewed, IssueUpdated } from "./Message";
 
@@ -19,9 +19,10 @@ export class IssueDetails {
 
     }
 
-    activate(params: any, routeConfig: RouteConfig) : any {
+    activate(params: any, routeConfig: RouteConfig, router: Router) : any {
 
         this.routeConfig = routeConfig;
+        this.router = router;
 
         this.publisherService.GetPublishers()
             .then(data => {
@@ -80,6 +81,12 @@ export class IssueDetails {
 
     }
 
+    cancel() {
+
+        this.router.router.navigateBack();
+
+    }
+
     public issue: Issue | any;
     public Publishers: Publisher[];
 
@@ -87,5 +94,6 @@ export class IssueDetails {
     private publisherService: PublisherService;
     private eventAggregator: EventAggregator;
     private routeConfig: RouteConfig | any;
+    private router: Router | any;
     private newIssue: boolean = false;
 }

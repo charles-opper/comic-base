@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ComicBase.Spa.Infrastructure;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +12,14 @@ namespace ComicBase.Spa.Controllers
     [ApiController]
     public abstract class ApiControllerBase
     {
-        public ApiControllerBase(IConfiguration configuration)
+        public ApiControllerBase(IConfiguration configuration, IOptions<AppConfig> options)
         {
+            AppConfig = options.Value;
             ConnectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        protected string ConnectionString { get; set; }
+        protected AppConfig AppConfig { get; set; }
+
+        protected string ConnectionString { get; set; }        
     }
 }

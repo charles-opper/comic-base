@@ -8,17 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\app\components\CosmicSearch\cosmic-search.ts" />
+    <None Remove="ClientApp\app\components\CosmicSearch\CosmicSearchService.ts" />
+    <None Remove="ClientApp\app\components\CosmicSearch\Model\OnlineCatalogItem.ts" />
     <None Remove="ClientApp\app\components\Issue\issue-details.ts" />
     <None Remove="ClientApp\app\components\Issue\issue-list.ts" />
+    <None Remove="ClientApp\app\components\Issue\issue-manager.ts" />
     <None Remove="ClientApp\app\components\Issue\IssueService.ts" />
     <None Remove="ClientApp\app\components\Issue\Message.ts" />
     <None Remove="ClientApp\app\components\Issue\Models\Issue.ts" />
     <None Remove="ClientApp\app\components\Issue\no-selection.ts" />
     <None Remove="ClientApp\app\components\Publisher\Models\Publisher.ts" />
     <None Remove="ClientApp\app\components\Publisher\PublisherService.ts" />
+    <None Remove="ClientApp\app\infrastructure\date-format.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="aurelia-http-client.TypeScript.DefinitelyTyped" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
   </ItemGroup>
@@ -29,18 +35,24 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\ApplicationCore\ComicBase.Core\ComicBase.Core.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\ExternalApis\OnlineComicApiProvider\ComicBase.OnlineComicApiProvider\ComicBase.OnlineComicApiProvider.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Repositories\ComicBase.EfSqlRepository\ComicBase.EfSqlRepository.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\components\CosmicSearch\cosmic-search.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\CosmicSearch\CosmicSearchService.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\CosmicSearch\Model\OnlineCatalogItem.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Issue\issue-details.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Issue\issue-list.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Issue\issue-manager.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Issue\IssueService.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Issue\Message.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Issue\Models\Issue.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Issue\no-selection.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Publisher\Models\Publisher.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\Publisher\PublisherService.ts" />
+    <TypeScriptCompile Include="ClientApp\app\infrastructure\date-format.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

@@ -1,0 +1,32 @@
+﻿<template>
+    <require from="../../infrastructure/date-format"></require>
+    <h2>The Cosmic Search Finds All</h2>
+    <p>Find your favorite issue online by title.</p>
+    <form>
+        <div class="container-fluid well well-sm">
+            <div class="row">
+                <label for="SearchTitleInput" class="col-md-2 text-right">Search by Title: </label><input type="text" value.bind="searchTermTitle" /><button click.delegate="searchOnTitle()">Search</button>&nbsp;<span class="alert-info">${titleErrorMessage}</span>
+            </div>
+        </div>
+    </form>
+    <h3>Results:</h3>
+    <div class="well well-sm">
+        <table class="table table-hover table-responsive table-striped">
+            <thead>
+                <tr><th>Title</th><th>Publisher</th><th>Description</th><th>Issue</th><th>Cover Date</th><th></th></tr>
+            </thead>
+            <tbody>
+                <tr repeat.for="item of searchResults">
+                    <td>${item.Title}</td>
+                    <td>${item.Publisher}</td>
+                    <td>${item.Description}</td>
+                    <td>${item.IssueNumber}</td>
+                    <td>${item.CoverDate | dateFormat}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+</template>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03B991B6-D2FB-4E2C-BB7C-CD3CFC2B804A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thoorium.Comicvine</RootNamespace>
+    <AssemblyName>Thoorium.Comicvine</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RestSharp, Version=105.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.1.0\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\ApiRessources.cs" />
+    <Compile Include="Api\Comicvine.cs" />
+    <Compile Include="Enums\CharacterFields.cs" />
+    <Compile Include="Enums\ChatFields.cs" />
+    <Compile Include="Enums\ConceptFields.cs" />
+    <Compile Include="Enums\EpisodeFields.cs" />
+    <Compile Include="Enums\IssueFields.cs" />
+    <Compile Include="Enums\LocationFields.cs" />
+    <Compile Include="Enums\MovieFields.cs" />
+    <Compile Include="Enums\ObjectFields.cs" />
+    <Compile Include="Enums\OriginFields.cs" />
+    <Compile Include="Enums\PeopleFields.cs" />
+    <Compile Include="Enums\PersonFields.cs" />
+    <Compile Include="Enums\PowerFields.cs" />
+    <Compile Include="Enums\PromoFields.cs" />
+    <Compile Include="Enums\PublisherFields.cs" />
+    <Compile Include="Enums\RessourceType.cs" />
+    <Compile Include="Enums\SeriesFields.cs" />
+    <Compile Include="Enums\StoryArcFields.cs" />
+    <Compile Include="Enums\TeamFields.cs" />
+    <Compile Include="Enums\VideoFields.cs" />
+    <Compile Include="Enums\VolumeFields.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Helpers\RestHelper.cs" />
+    <Compile Include="Objects\Character.cs" />
+    <Compile Include="Objects\CharacterResponse.cs" />
+    <Compile Include="Objects\Concept.cs" />
+    <Compile Include="Objects\ConceptResponse.cs" />
+    <Compile Include="Objects\Creator.cs" />
+    <Compile Include="Objects\Episode.cs" />
+    <Compile Include="Objects\EpisodeResponse.cs" />
+    <Compile Include="Objects\Image.cs" />
+    <Compile Include="Objects\Issue.cs" />
+    <Compile Include="Objects\IssueResponse.cs" />
+    <Compile Include="Objects\Location.cs" />
+    <Compile Include="Objects\LocationResponse.cs" />
+    <Compile Include="Objects\MovieResponse.cs" />
+    <Compile Include="Objects\Movie.cs" />
+    <Compile Include="Objects\Object.cs" />
+    <Compile Include="Objects\ObjectResponse.cs" />
+    <Compile Include="Objects\Origin.cs" />
+    <Compile Include="Objects\OriginResponse.cs" />
+    <Compile Include="Objects\Person.cs" />
+    <Compile Include="Objects\PersonResponse.cs" />
+    <Compile Include="Objects\Power.cs" />
+    <Compile Include="Objects\PowerResponse.cs" />
+    <Compile Include="Objects\Publisher.cs" />
+    <Compile Include="Objects\PublisherResponse.cs" />
+    <Compile Include="Objects\Response.cs" />
+    <Compile Include="Objects\SearchFieldList.cs" />
+    <Compile Include="Objects\SearchResponse.cs" />
+    <Compile Include="Objects\Series.cs" />
+    <Compile Include="Objects\SeriesResponse.cs" />
+    <Compile Include="Objects\StoryArc.cs" />
+    <Compile Include="Objects\StoryArcResponse.cs" />
+    <Compile Include="Objects\Studios.cs" />
+    <Compile Include="Objects\Team.cs" />
+    <Compile Include="Objects\TeamResponse.cs" />
+    <Compile Include="Objects\Video.cs" />
+    <Compile Include="Objects\VideoResponse.cs" />
+    <Compile Include="Objects\Volume.cs" />
+    <Compile Include="Objects\VolumeResponse.cs" />
+    <Compile Include="Objects\Writer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
