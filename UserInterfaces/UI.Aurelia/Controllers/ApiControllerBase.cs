@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace ComicBase.Spa.Controllers
 {
     [ApiController]
-    public abstract class ApiControllerBase
+    public abstract class ApiControllerBase : ControllerBase
     {
         public ApiControllerBase(IConfiguration configuration, IOptions<AppConfig> options)
         {

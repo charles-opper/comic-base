@@ -6,7 +6,6 @@ using ComicBase.Core.Domain.Entities;
 using ComicBase.EfSqlRepository.DataServices;
 using ComicBase.EfSqlRepository.Interfaces;
 using ComicBase.Spa.Infrastructure;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
@@ -33,17 +32,31 @@ namespace ComicBase.Spa.Controllers
 
         // GET: api/Issue/5
         [HttpGet("{id}")]
-        public async Task<Issue> Get(int id)
+        [ProducesResponseType(404)]
+        public async Task<ActionResult<Issue>> Get(int id)
         {
             var service = new IssueService(ConnectionString, _factory);
 
-            return await service.GetIssueAsync(id);
+            var issue = await service.GetIssueAsync(id);
+
+            if (issue == null)
+            {
+                return NotFound();
+            }
+
+            return issue;
         }
 
         // POST: api/Issue
         [HttpPost]
+        [ProducesResponseType(400)]
         public async Task<ActionResult<Issue>> Post([FromBody] Issue issue)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var service = new IssueService(ConnectionString, _factory);
 
             await service.SaveIssueAsync(issue);
@@ -53,8 +66,14 @@ namespace ComicBase.Spa.Controllers
 
         // PUT: api/Issue/5
         [HttpPut("{id}")]
-        public async Task<Issue> Put(int id, [FromBody] Issue issue)
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<Issue>> Put(int id, [FromBody] Issue issue)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var service = new IssueService(ConnectionString, _factory);
 
             return await service.SaveIssueAsync(issue);
@@ -62,11 +81,17 @@ namespace ComicBase.Spa.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public async Task<Issue> Delete(int id)
+        [ProducesResponseType(404)]
+        public async Task<ActionResult<Issue>> Delete(int id)
         {
             var service = new IssueService(ConnectionString, _factory);
 
             var issue = await service.GetIssueAsync(id);
+            if (issue == null)
+            {
+                return NotFound();
+            }
+
             service.RemoveIssue(issue);
 
             return issue;
